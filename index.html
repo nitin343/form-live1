@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="base1.css" />
+    <!--css only-->
+    <link rel="icon" href="MCE Logo_JPG.png" sizes="16x16 32x32" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCE Managment-Form</title>
+  </head>
+
+  <body>
+    
+     
+      <div class="flex">
+        <img src="MCE LOGO_JPG.png" alt="MCE" class="logo" />
+        <div class="flex2">
+          <div class="mce">Malnad College Of Engineering</div>
+          <div class="hassan">Hassan-573201 Karnataka ,India</div>
+        </div>
+      </div>
+    
+
+    <div class="contain">
+      <form method="POST" action="index.php" >
+
+
+        <!--input forms-->
+        <h3 class="padding">Admission Form</h3>
+
+        <!--Image input-->
+        <div class="form-group">
+          <label >Upload Your photo</label>
+          <input
+            type="file"
+            class="form-control-file"
+            name="student_photo"
+          />
+        </div>
+        <!--image input-->
+
+        
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputEmail4">Full Name</label>
+            <input type="text" name="student_name" required class="form-control" />
+          </div>
+        </div>
+
+        <!--branch info-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Year</label>
+            <input type="text" name="admission_year" required class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4"  >Degree Name</label>
+            <input type="text" name="degree_name" required class="form-control" readonly value="Bachelors Of Engineering" />
+          </div>
+        </div>
+      
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputState">Semester</label>
+            <select id="inputState" name="student_semester" required class="form-control">
+              <option selected>Choose..</option>
+              <option>1</option>
+              <option>3</option>
+              <option>5</option>
+              <option>7</option>
+            </select>
+          </div>
+          
+        </div>
+        <!--branch info-->
+
+        <!--Quota $ category-->
+
+        <div class="form-row">
+         
+
+          <div class="form-group col-md-4">
+            <label for="inputState">Branch Preference 1</label>
+            <select id="inputState" name="branch_prefernce1" required class="form-control">
+              <option selected>Choose..</option>
+              <option>Automobile Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Computer Science Engineering</option>
+              <option>Electrical & Electronics Engineering</option>
+              <option>Electronics & Communication Engineering</option>
+              <option>Electronics & Instrumentation Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Industrial & Production Engineering</option>
+              <option>Information Science Engineering</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputState">Branch Preference 2</label>
+            <select id="inputState" name="branch_prefernce2" required class="form-control">
+              <option selected>Choose...</option>
+              <option>Automobile Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Computer Science Engineering</option>
+              <option>Electrical & Electronics Engineering</option>
+              <option>Electronics & Communication Engineering</option>
+              <option>Electronics & Instrumentation Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Industrial & Production Engineering</option>
+              <option>Information Science Engineering</option>
+             
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputState">Branch Preference 3</label>
+            <select id="inputState" name="branch_prefernce3"  class="form-control">
+              <option selected>Choose...</option>
+              <option>Automobile Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Computer Science Engineering</option>
+              <option>Electrical & Electronics Engineering</option>
+              <option>Electronics & Communication Engineering</option>
+              <option>Electronics & Instrumentation Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Industrial & Production Engineering</option>
+              <option>Information Science Engineering</option>
+             
+            </select>
+          </div>
+          
+        </div>
+        <!--Quota $ category-->
+
+        <!--Admission order nno and details-->
+
+
+        <div class="row">
+          <div class="col">
+            <label for="inputAddress">CET/ COMEDK/AIEEE Registration No.</label>
+
+            <input type="text" name="cet_regno" class="form-control" />
+          </div>
+          <div class="col">
+            <label for="inputAddress">Rank</label>
+
+            <input type="text" name="cet_rank" class="form-control" />
+          </div>
+        </div>
+        <!--Admission order nno and details-->
+
+        <!--fees detail-->
+
+        <div class="row">
+          <div class="col">
+            <label for="inputAddress">Admission Based on </label>
+            <input
+              type="text"
+              class="form-control"
+              name="admission_type"
+              placeholder="PUC/12th"
+            />
+          </div>
+
+        </div>
+
+  
+        <!--fees detail-->
+
+        <div class="form-row">
+          <div class="form-group" style="width: 100%;">
+            <h5 style="color: red; margin-top: 30px;">
+              Below details must be filled according to SSLC Marks Card*
+            </h5>
+          </div>
+          <div class="form-group col">
+            <label >Date of Birth</label>
+            <input type="date" name="student_dob" required class="form-control"  />
+          </div>
+          <div class="form-group col">
+            <label >Gender</label>
+            <select id="inputState"  name="student_gender" required class="form-control">
+              <option selected>Choose...</option>
+
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group col">
+            <label >Blood Group</label>
+           <select id="inputState"  name="student_blood_group" required class="form-control">
+              <option selected>Choose...</option>
+
+              <option value="Male">A+</option>
+              <option value="Female">A-</option>
+              <option value="Other">B+</option>
+              <option value="Other">B-</option>
+              <option value="Other">0+</option>
+              <option value="Other">0-</option>
+              <option value="Other">AB+</option>
+              <option value="Other">AB-</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!--Current Adress-->
+        <div class="form-group">
+          <label for="inputAddress">Current Address</label>
+          <input type="text" name="current_address"  class="form-control" id="inputAddress" />
+        </div>
+
+        <!--Current Adress-->
+
+        <!--permanent Adress-->
+
+        <div class="form-group">
+          <label for="inputAddress2">Permanent Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            name="permanent_address"
+            required
+          />
+    
+        </div>
+        <!--permanent Adress-->
+
+        <!--Contact details-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Student Contact Number</label>
+            <input type="text" maxlength="10" name="student_phone" required class="form-control" />
+          </div>
+  
+          <div class="form-group col">
+            <label >Student Email</label>
+            <input type="email"  name="student_email" required class="form-control" id="inputEmail4" />
+          </div>
+        </div>
+        <!--Contact details-->
+
+        <!--place/address-->
+       
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Place of Birth</label>
+            <input type="text" name="birth_place"  class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">State of Birth</label>
+            <input type="text" name="birth_state" required class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Country of Birth</label>
+            <input type="text" name="birth_nation" class="form-control" />
+          </div>
+          
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nationality</label>
+            <input type="text" name="student_nationality"  class="form-control" />
+          </div>
+        </div>
+
+      
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label >Aadhar Number</label>
+          <input type="text" 
+          name="student_aadhar"
+          class="form-control" >
+          </div>
+         
+        </div>
+
+       
+        <!--place/address-->
+        
+
+<!--SSLC DETAIL-->
+
+<div>
+<h3 style="margin:10px 5px;">Academic Details</h3>
+<h5 style="color: red; margin: 5px 5px;">SSLC/10th Standard details</h5>
+
+<div class="form-group">
+   <label >School Name</label>
+   <input type="text" class="form-control" name="sslc_school" >
+ </div>
+
+ <div class="form-group">
+   <label >Board Name</label>
+   <input type="text" class="form-control" name="sslc_board" placeholder="KSEEB" >
+ </div>
+
+ <div class="form-row">
+   <div class="form-group col-md-6">
+     <label > Percentage %</label>
+     <input type="text"  name='sslc_percentage' class="form-control" >
+   </div>
+   <div class="form-group col-md-6">
+     <label >Year of Passing</label>
+     <input type="text"
+     name="sslc_year" class="form-control" >
+   </div>
+ </div>
+
+ <div class="form-row">
+  
+   <div class="form-group col-md-6">
+     <label >Medium Of Instruction</label>
+     <input type="text"
+     name="sslc_medium" 
+     placeholder="English"
+     class="form-control" >
+   </div>
+ </div>
+
+ </div>
+
+ <!--SSLC TABLE-->
+
+ <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col-2">#</th>
+      <th scope="col-6">Subject Name</th>
+      <th scope="col-3">Obtained Marks</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>KANNADA</td>
+     <td> <input type="number" 
+      name="sslc_kannada"
+      style="width: 100px;"
+      class="form-control" >
+  </td>
+    
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>ENGLISH</td>
+      <td> <input type="number" 
+          name="sslc_english"
+          style="width: 100px;"
+          class="form-control" >
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td >HINDI</td>
+      <td> <input type="number" 
+          name="sslc_hindi"
+          
+          class="form-control" style="width: 100px;">
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <td >MATHEMATICS</td>
+      <td> <input type="number" 
+          name="sslc_maths"
+          
+          class="form-control" style="width: 100px;">
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">5</th>
+      <td >SCIENCE</td>
+      <td> <input type="number" 
+          name="sslc_science"
+          
+          class="form-control" style="width: 100px;">
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">6</th>
+      <td >SOCIAL SCIENCE</td>
+      <td> <input type="number" 
+          name="sslc_social"
+          
+          class="form-control" style="width: 100px;">
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">7</th>
+      <td >Total</td>
+      <td> <input type="number" 
+          name="sslc_result"
+          
+          class="form-control" style="width: 100px;">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!--PUC DETAIL-->
+
+<h3 style="margin:10px 5px;">Academic Details</h3>
+<h5 style="color: red; margin: 5px 5px;">PUC/12th details</h5>
+
+<div class="form-group">
+   <label >College Name</label>
+   <input type="text" class="form-control" name="college_name" >
+ </div>
+
+ <div class="form-group">
+   <label >Board Name</label>
+   <input type="text" class="form-control" value="PU BOARD" readonly />
+ </div>
+
+ <div class="form-row">
+   <div class="form-group col-md-6">
+     <label > Percentage %</label>
+     <input type="text"  name='pu_result' class="form-control" >
+   </div>
+   <div class="form-group col-md-6">
+     <label >Year of Passing</label>
+     <input type="text"
+     name="pu_year" class="form-control" >
+   </div>
+ </div>
+
+
+
+<!--father details-->
+
+<h5 style="margin: 5px 5px;">Father Details</h5>
+
+<div class="form-group ">
+  <label >Name Of Father</label>
+  <input type="text" required name='father_name' class="form-control" >
+</div>
+
+          <!--mobile number-->
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Contact Number</label>
+              <input type="text" maxlength=""  name='father_phone'
+              class="form-control" id="inputCity">
+            </div>
+
+
+            <div class="form-group col-md-6">
+            <div class="form-group">
+              <label >Occupation</label>
+              <input type="text" class="form-control" name="father_occupation" required >
+            </div>
+          </div>
+ 
+          </div>
+
+
+          <div class="form-group ">
+            <label >Parent Email-Id</label>
+            <input type="text"
+            name="parent_email" class="form-control" >
+          </div>
+
+          <!--mobile number-->
+
+<!--father details-->
+
+<!--mother detail-->
+
+
+
+    <h5 style="margin: 5px 5px;">MOTHER Details</h5>
+
+    <div class="form-group">
+      
+       <div class="form-group ">
+         <label >Name Of Mother</label>
+         <input type="text" required name='mother_name' class="form-control" >
+       </div>
+
+    <!--mobile number-->
+
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+      <div>
+        <label >Occupation</label>
+        <input type="text" class="form-control" name="mother_occupation"  />
+      </div>
+      </div>
+     
+
+      <div class="form-group col-md-6">
+        <label >Contact Number</label>
+        <input type="text" maxlength="10"  name='mother_phone'
+        class="form-control" >
+      </div>
+
+    </div>
+
+    <!--mobile number-->
+    
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label >Family Annual Income</label>
+        <input type="text"  name='father_annual_income'  class="form-control" >
+      </div>
+    
+    </div>
+    
+<!--mother detail-->
+
+<!--Guardian's details-->
+<h3>Gaurdians's Detail</h3>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label >Name Of Guardian</label>
+    <input type="text" 
+    name="gaurdian_name"
+  
+    class="form-control" id="inputEmail4">
+  </div>
+ 
+
+  <div class="form-group col-md-6">
+    <label >Contact Number</label>
+    <input type="number"  name='gaurdian_phone'
+    class="form-control" >
+  </div>
+</div>
+
+
+<!--Guardian's details-->
+
+
+
+
+        <button class="btn btn-primary next" type="submit">Submit</a>
+      </form>
+    </div>
+  </body>
+<script>
+    if(typeof(Storage) !== "undefined"){
+      localStorage.setItem(document.getElementsByClassName(contain));
+      localStorage.getItem(document.getElementsByClassName(contain))
+    }
+</script>
+</html>
