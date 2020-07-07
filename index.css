@@ -52,7 +52,7 @@
 .contain {
   display: flex;
   justify-content: center;
-  margin: 0 20px;
+  padding: 0 14px;
   width: 97%;
   
 
